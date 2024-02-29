@@ -8,7 +8,7 @@ XAIBA-COVID addresses this challenge with an explainable AI-based boosting metho
 
 This GitHub repository presents XAIBA-COVID, showcasing its efficiency in using limited data for impactful clinical insights, and contributing to the rapid triage of COVID-19 cases in resource-constrained environments.
 
-                ![PR_Flowchart_R3](https://github.com/DIMOMID/XAIBA-COVID/assets/96596774/2a6d016c-3321-4c70-97c0-c33f4407fa78)
+![PR_Flowchart_R3](https://github.com/DIMOMID/XAIBA-COVID/assets/96596774/2a6d016c-3321-4c70-97c0-c33f4407fa78)
 
 ## Key Contributions
 
