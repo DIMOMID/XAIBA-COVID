@@ -2,9 +2,13 @@
 
 ## Brief Introduction
 
-The COVID-19 pandemic continues to challenge global healthcare systems, underscoring the need for rapid and accurate diagnostic solutions. XAIBA-COVID emerges as a cutting-edge solution designed to enhance the diagnosis of COVID-19, pneumonia, and normal cases through chest X-ray (CXR) imaging. This research introduces an explainable AI-based boosting approach that extracts and analyzes a vast array of local and global radiomic features from the lung regions in CXR images. By employing advanced feature selection and classification techniques, XAIBA-COVID aims to significantly improve the accuracy and interpretability of COVID-19 diagnostics, offering a valuable tool for radiologists and healthcare professionals in managing the pandemic.
+The COVID-19 pandemic has severely strained global healthcare systems, highlighting the need for quick and accurate diagnostic methods. Interpreting chest X-ray (CXR) images for COVID-19 detection, especially when differentiating from conditions like pneumonia, is complex due to overlapping symptoms.
 
-![PR_Flowchart_R3](https://github.com/DIMOMID/XAIBA-COVID/assets/96596774/2a6d016c-3321-4c70-97c0-c33f4407fa78)
+XAIBA-COVID addresses this challenge with an explainable AI-based boosting method to extract and analyze radiomic features from CXR images, enabling the distinction between Normal, COVID-19, and Pneumonia cases. This approach utilizes advanced algorithms to select the most informative features and employs ensemble classifiers like CatBoost, XGBoost, and LightGBM for accurate classification. The interpretability of the model is ensured through the Shapley Additive Explanations (SHAP) module, enhancing radiologists' decision-making capabilities.
+
+This GitHub repository presents XAIBA-COVID, showcasing its efficiency in using limited data for impactful clinical insights, and contributing to the rapid triage of COVID-19 cases in resource-constrained environments.
+
+                ![PR_Flowchart_R3](https://github.com/DIMOMID/XAIBA-COVID/assets/96596774/2a6d016c-3321-4c70-97c0-c33f4407fa78)
 
 ## Key Contributions
 
