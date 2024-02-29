@@ -63,13 +63,13 @@ XAIBA-COVID demonstrates superior performance across various metrics, significan
 | Balasubramaniam et. al     | Ensemble + SAKHO (Self Adaptive Kill Herd Optimization) | 92.13 |
 | Apostolopoulos et. al      | Inception RestNetV2                                   | 92.85        |
 | Wang                       | COVID-Net                                             | 93.30        |
-| Proposed Model (CatBoost)  | XAIBA-COVID                                           | 93.30        |
+| **Proposed Model (CatBoost)**  | **XAIBA-COVID**                                           | **93.30**        |
 | Shi et. al                 | Teacher Student Deformable Attention Module (DAM)     | 93.44        |
 | Luz et. al                 | EfficientNet-B0-B5 with 4 blocks added                | 93.90        |
 | Jiang et. al               | Swin Transformer and transformer in transformer       | 94.75        |
 | Chaudhary et. al           | Efficient-CovidNet (EfficientNet-B1)                  | 95.00        |
-| Proposed Model (XGBoost)   | XAIBA-COVID                                           | 95.30        |
-| Proposed Model (LGMBoost)  | XAIBA-COVID                                           | 95.77        |
+| **Proposed Model (XGBoost)**   | **XAIBA-COVID**                                           | **95.30**        |
+| **Proposed Model (LGMBoost)**  | **XAIBA-COVID**                                           | **95.77**        |
 
 ## Comparison with Other AI Methods
 
