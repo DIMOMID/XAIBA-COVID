@@ -4,25 +4,25 @@
 
 The COVID-19 pandemic has severely strained global healthcare systems, highlighting the need for quick and accurate diagnostic methods. Interpreting chest X-ray (CXR) images for COVID-19 detection, especially when differentiating from conditions like pneumonia, is complex due to overlapping symptoms.
 
-XAIBA-COVID addresses this challenge with an explainable AI-based boosting method to extract and analyze radiomic features from CXR images, enabling the distinction between Normal, COVID-19, and Pneumonia cases. This approach utilizes advanced algorithms to select the most informative features and employs ensemble classifiers like CatBoost, XGBoost, and LightGBM for accurate classification. The interpretability of the model is ensured through the Shapley Additive Explanations (SHAP) module, enhancing radiologists' decision-making capabilities.
-
+XAIBA-COVID addresses the diagnostic challenge by employing an explainable AI-based boosting method to meticulously extract and analyze both local radiomic features from patchified Region of Interest (ROI) and global radiomic features from the entire ROI in CXR images. This dual approach facilitates nuanced differentiation among Normal, COVID-19, and Pneumonia cases, enhancing the model's diagnostic precision. By leveraging advanced algorithms for feature selection, XAIBA-COVID focuses on the most informative features, enhancing the efficacy of the ensemble classifiers—CatBoost, XGBoost, and LightGBM—in making accurate classifications. The integration of the Shapley Additive Explanations (SHAP) module ensures the model's interpretability, providing radiologists with a transparent and understandable basis for decision-making, thereby bridging the gap between advanced AI diagnostics and clinical application.
 This GitHub repository presents XAIBA-COVID, showcasing its efficiency in using limited data for impactful clinical insights, and contributing to the rapid triage of COVID-19 cases in resource-constrained environments.
 
 ![PR_Flowchart_R3](https://github.com/DIMOMID/XAIBA-COVID/assets/96596774/2a6d016c-3321-4c70-97c0-c33f4407fa78)
 
-## Key Contributions
-
-1. **Advanced Feature Extraction**: Introducing an advanced explainable AI-based boosting algorithm for comprehensive quantitative analysis of radiomic features from CXR images, focusing on the lung area as the Region of Interest (ROI).
-2. **Enhanced Diagnostic Accuracy**: Addressing the challenge of false positives by distinguishing COVID-19 from similar respiratory conditions through a nuanced analysis of radiomic features.
-3. **Optimized Ensemble Classifiers**: Incorporating a classification module with optimized ensemble classifiers (CatBoost, XGBoost, and LightGBM) to boost detection reliability.
-4. **Interpretability and Transparency**: Utilizing the Shapley Additive Explanations (SHAP) module to provide insights into the decision-making process, enhancing the interpretability of AI-driven diagnostics.
-5. **Comprehensive Evaluation**: Demonstrating the model's efficacy in clinical decision-making through extensive experiments, particularly valuable in resource-constrained settings.
-
 ## Radiomic Feature Groups
 
-- **First-Order Features**: Including Energy, Entropy, Kurtosis, Skewness, and more.
-- **Shape Features**: Assessing the geometry and size of the lung ROI.
-- **Texture Features**: Analyzing patterns and variations within the lung area through GLCM, GLDM, GLRLM, GLSZM, and NGTDM.
+## Table 1: Extracted PyRadiomics Features, Grouped by Feature Category
+
+| Feature Group | PyRadiomics Features List |
+|---------------|---------------------------|
+| **First-Order (18)** | 10 Percentile, 90 Percentile, Energy, Entropy, Interquartile Range, Kurtosis, Maximum, Mean Absolute Deviation, Mean, Median, Minimum, Range, Robust Mean Absolute Deviation, Root Mean Squared, Skewness, Total Energy, Uniformity, Variance |
+| **Shape (14)** | Elongation, Flatness, Least Axis Length, Major Axis Length, Maximum 2D Diameter Column, Maximum2D Diameter Row, Maximum 2D Diameter Slice, Maximum 3D Diameter, Mesh Volume, Minor Axis Length, Sphericity, Surface Area, Surface Volume Ratio, Voxel Volume |
+| **GLCM (24)** | Autocorrelation, Cluster Prominence, Cluster Shade, Cluster Tendency, Contrast, Correlation, Difference Average, Difference Entropy, Difference Variance, Id, Idm, Idmn, Idn, Imc1, Imc2, Inverse Variance, Joint Average, Joint Energy, Joint Entropy, MCC, Maximum Probability, Sum Average, Sum Entropy, Sum Squares |
+| **GLDM (14)** | Dependence Entropy, Dependence Non Uniformity, Dependence Non Uniformity Normalized, Dependence Variance, Gray Level Non Uniformity, Gray Level Variance, High Gray Level Emphasis, Large Dependence Emphasis, Large Dependence High Gray Level Emphasis, Large Dependence Low Gray Level Emphasis, Low Gray Level Emphasis, Small Dependence Emphasis, Small Dependence High Gray Level Emphasis, Small Dependence Low Gray Level Emphasis |
+| **GLRLM (16)** | Gray Level Non Uniformity, Gray Level Non Uniformity Normalized, Gray Level Variance, High Gray Level Run Emphasis, Long Run Emphasis, Long Run High Gray Level Emphasis, Long Run Low Gray Level Emphasis, Low Gray Level Run Emphasis, Run Entropy, Run Length Non Uniformity, Run Length Non Uniformity Normalized, Run Percentage, Run Variance, Short Run Emphasis, Short Run High Gray Level Emphasis, Short Run Low Gray Level Emphasis |
+| **GLSZM (16)** | Gray Level Non Uniformity, Gray Level Non Uniformity Normalized, Gray Level Variance, High Gray Level Zone Emphasis, Large Area Emphasis, Large Area High Gray Level Emphasis, Large Area Low Gray Level Emphasis, Low Gray Level Zone Emphasis, Size Zone Non Uniformity, Size Zone Non Uniformity Normalized, Small Area Emphasis, Small Area High Gray Level Emphasis, Small Area Low Gray Level Emphasis, Zone Entropy, Zone Percentage, Zone Variance |
+| **NGTDM (5)** | Busyness, Coarseness, Complexity, Contrast, Strength |
+
 
 ## Results and Performance
 
@@ -79,7 +79,7 @@ XAIBA-COVID demonstrates superior performance across various metrics, significan
 
 ## Code Availability
 
-The EEFML-COVID code is openly available for public use. Feel free to use it for COVID-19 detection and related research.
+The XAIBA-COVID code is openly available for public use. Feel free to use it for COVID-19 detection and related research.
 
 ## Citation
 
