@@ -12,7 +12,7 @@ This GitHub repository presents XAIBA-COVID, showcasing its efficiency in using 
 
 ## Radiomic Feature Groups
 
-## Table 1: Extracted PyRadiomics Features, Grouped by Feature Category
+### Table 1: Extracted PyRadiomics Features, Grouped by Feature Category
 
 | Feature Group | PyRadiomics Features List |
 |---------------|---------------------------|
