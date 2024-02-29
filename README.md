@@ -71,13 +71,15 @@ XAIBA-COVID demonstrates superior performance across various metrics, significan
 | **Proposed Model (XGBoost)**   | **XAIBA-COVID**                                           | **95.30**        |
 | **Proposed Model (LGMBoost)**  | **XAIBA-COVID**                                           | **95.77**        |
 
-## Comparison with Other AI Methods
+## Author Information
 
-The proposed XAIBA-COVID model showcases remarkable accuracy, exceeding that of established models like VGG19, DeepCOVID-XR, and various ensemble DNN models, confirming its potential as a leading solution in COVID-19 CXR image analysis.
+- **Name:** Omid Almasi
+- **Email:** oalmasi@scu.edu
+- **LinkedIn:** [www.linkedin.com/in/omid-almasi](www.linkedin.com/in/omid-almasi)
 
-## Access and Use
+## Code Availability
 
-For full implementation details and to access the code, please visit our GitHub page: [https://github.com/DIMOMID/XAIBA-COVID](https://github.com/DIMOMID/XAIBA-COVID).
+The EEFML-COVID code is openly available for public use. Feel free to use it for COVID-19 detection and related research.
 
 ## Citation
 
