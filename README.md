@@ -7,6 +7,7 @@ The COVID-19 pandemic has severely strained global healthcare systems, highlight
 XAIBA-COVID addresses the diagnostic challenge by employing an explainable AI-based boosting method to meticulously extract and analyze both local radiomic features from patchified Region of Interest (ROI) and global radiomic features from the entire ROI in CXR images. This dual approach facilitates nuanced differentiation among Normal, COVID-19, and Pneumonia cases, enhancing the model's diagnostic precision. By leveraging advanced algorithms for feature selection, XAIBA-COVID focuses on the most informative features, enhancing the efficacy of the ensemble classifiers—CatBoost, XGBoost, and LightGBM—in making accurate classifications. The integration of the Shapley Additive Explanations (SHAP) module ensures the model's interpretability, providing radiologists with a transparent and understandable basis for decision-making, thereby bridging the gap between advanced AI diagnostics and clinical application.
 This GitHub repository presents XAIBA-COVID, showcasing its efficiency in using limited data for impactful clinical insights, and contributing to the rapid triage of COVID-19 cases in resource-constrained environments.
 
+
 ![PR_Flowchart_R3](https://github.com/DIMOMID/XAIBA-COVID/assets/96596774/2a6d016c-3321-4c70-97c0-c33f4407fa78)
 
 ## Radiomic Feature Groups
