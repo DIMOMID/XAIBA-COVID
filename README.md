@@ -24,6 +24,49 @@ The COVID-19 pandemic continues to challenge global healthcare systems, undersco
 
 XAIBA-COVID demonstrates superior performance across various metrics, significantly outperforming existing AI methods in COVID-19 detection. Detailed results and comparisons are presented in the tables within the full paper.
 
+### Table 3: XAIBA-COVID Performance for All Classes per Different Classifier Modules
+
+| XAIBA-COVID Classifier Module | Class     | Precision (%) | Recall (%) | F1-Score (%) |
+|-------------------------------|-----------|---------------|------------|--------------|
+| CatBoost                      | Normal    | 92            | 87         | 89           |
+|                               | Pneumonia | 94            | 97         | 96           |
+|                               | COVID-19  | 93            | 91         | 92           |
+| XGBoost                       | Normal    | 94            | 88         | 91           |
+|                               | Pneumonia | 95            | 98         | 96           |
+|                               | COVID-19  | 98            | 91         | 94           |
+| LightGBM                      | Normal    | 95            | 90         | 93           |
+|                               | Pneumonia | 96            | 98         | 97           |
+|                               | COVID-19  | 96            | 95         | 95           |
+
+### Table 4: Comparison of the Proposed XAIBA-COVID with Other AI Methods in COVID-19 Detection Based on CXR
+
+| Authors                    | Approaches                                            | Accuracy (%) |
+|----------------------------|-------------------------------------------------------|--------------|
+| Horry et. al               | VGG19                                                 | 83.00        |
+| Wehbe et. al               | DeepCOVID-XR (Ensemble CNNs)                          | 83.00        |
+| Hertel et. al              | Majority Voting Deep Ensemble Model                   | 84.00        |
+| Zhao et al.                | SC2Net (ResNet-18 & Spatial Attention Module)         | 84.23        |
+| Tsiknakis et. al           | Inception V3                                          | 85.00        |
+| Loey et. al                | Alexnet                                               | 85.20        |
+| Nasiri et. al              | DenseNet169 + XGBoost                                 | 89.70        |
+| Ozturk et. al              | DarkCovidNet                                          | 87.02        |
+| Kymar et. al               | Resnet1523 + XGBoost                                  | 90.00        |
+| Mahmud et. al              | CovXNet (CNN with Depthwise dilated convolution Inception V3) | 90.20 |
+| Keidar et. al              | Ensemble DNNs Model                                   | 90.30        |
+| Afifi et. al               | DenseNet161 with global and local attention-based features | 91.20 |
+| Al-Timemy et. al           | ResNet-50+ ESD (Ensemble Subspace Discriminant)       | 91.60        |
+| Rahimzade et. al           | Concatenation of Xception + ResNet50 V2               | 91.40        |
+| Balasubramaniam et. al     | Ensemble + SAKHO (Self Adaptive Kill Herd Optimization) | 92.13 |
+| Apostolopoulos et. al      | Inception RestNetV2                                   | 92.85        |
+| Wang                       | COVID-Net                                             | 93.30        |
+| Proposed Model (CatBoost)  | XAIBA-COVID                                           | 93.30        |
+| Shi et. al                 | Teacher Student Deformable Attention Module (DAM)     | 93.44        |
+| Luz et. al                 | EfficientNet-B0-B5 with 4 blocks added                | 93.90        |
+| Jiang et. al               | Swin Transformer and transformer in transformer       | 94.75        |
+| Chaudhary et. al           | Efficient-CovidNet (EfficientNet-B1)                  | 95.00        |
+| Proposed Model (XGBoost)   | XAIBA-COVID                                           | 95.30        |
+| Proposed Model (LGMBoost)  | XAIBA-COVID                                           | 95.77        |
+
 ## Comparison with Other AI Methods
 
 The proposed XAIBA-COVID model showcases remarkable accuracy, exceeding that of established models like VGG19, DeepCOVID-XR, and various ensemble DNN models, confirming its potential as a leading solution in COVID-19 CXR image analysis.
